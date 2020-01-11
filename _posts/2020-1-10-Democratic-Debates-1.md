@@ -11,10 +11,10 @@ This blog post aims to tell the story of the democratic debates through data.
 
 Along the way I hope to demonstrate some techniques in machine learning, natural language processing, and data science. Techniques that we can use to make sense of this data.
 
-_Note: The dataset is downloaded from rev.com which is a transcription service that provides full transcripts of the debates for free._
+_Note: The dataset is downloaded from [Rev](https://rev.com) which is a transcription service that provides full transcripts of the debates for free._
 
 # Speaking Time
-First, lets take a look at how long each candidate spoke over the past 6 debates:
+First, let's take a look at how long each candidate spoke over the past 6 debates:
 
 Candidate            | Total Time | Utterances | Average Time
 -------------------- | ---------
@@ -66,7 +66,7 @@ In general though, it seems if you can make it onto the stage, you’ll get at l
 
 ### Andrew Yang vs MSNBC
 
-There was some internet buzz that MSNBC was biased against Andrew Yang during the fifth debate. Heres what that plot looks like for just the fifth debate:
+There was some internet buzz that MSNBC was biased against Andrew Yang during the fifth debate. Here's what that plot looks like for just the fifth debate:
 
 ![image]({{ site.baseurl }}/images/polling-vs-speaking-time-fifth.png)
 
@@ -165,17 +165,27 @@ Throughout the election democrats have continuously stressed the importance of f
 
 ![image]({{ site.baseurl }}/images/utterances-trump.png)
 
-Jay Inslee was only given 25 opportunities to speak, and in 7 of those, he mentioned Trump. Curiously at the top is Andrew Yang, who has stressed the importance of not obsessing over Trump so often that he mentions him at a higher rate than basically every other Democrat. He mentions Trump in 14 out of 92 utterances (he actually References Trump directly 28 times). Kamala Harris, Cory Booker and Amy Klobuchar are tied for first, mentioning Trump in 17 of their utterances.
+Steve Bullock was only given 25 opportunities to speak, and in 7 of those, he mentioned Trump. Curiously at the top is Andrew Yang, who has stressed the importance of not obsessing over Trump so often that he mentions him at a higher rate than basically every other Democrat. He mentions Trump in 14 out of 92 utterances (he actually References Trump directly 28 times). Kamala Harris, Cory Booker and Amy Klobuchar are tied for first, mentioning Trump in 17 of their utterances. In total, Donald Trump was referenced 330 times across all the candidates.
+
+## Who else is mentioned?
+
+Of people who were mentioned that were not on stage, Barack Obama leads with 59, Mitch McConnell 23 and Vladimir Putin 18.
+
+We can also take a look at foreign countries that are mentioned to paint a picture of American foreign policy today.
+
+![image]({{ site.baseurl }}/images/mentioned-countries.png)
+
+China is mentioned 87 times, followed by Afghanistan (52), Russia (34), Iraq (32) and Iran (30). Undoubtedly, mentions of Iran will surge after [what](https://www.cbsnews.com/news/qassem-soleimani-iran-expert-calls-strike-that-killed-iranian-general-stunningly-stupid-and-counterproductive-2020/) [has](https://www.washingtonpost.com/national-security/2020/01/11/irans-attack-us-forces-exposes-pentagons-challenge-with-stopping-ballistic-missiles/) [happened](https://www.washingtonpost.com/world/europe/ukraine-requests-intelligence-on-crashed-airliner-as-iran-denies-missile-attack/2020/01/10/38e21ad8-332d-11ea-a053-dc6d944ba776_story.html).
 
 ## Poll numbers vs mentions
 
-It is often said that as candidates become more popular in the polls, other candidates will "attack" or reference them more often in debates. [Pete Buttigieg's latest debate](https://www.youtube.com/watch?v=CMgQu1GjSmk) comes to mind. Lets take a look at what the data says about this:
+It is often said that as candidates become more popular in the polls, other candidates will "attack" or reference them more often in debates. [Pete Buttigieg's latest debate](https://www.youtube.com/watch?v=CMgQu1GjSmk) comes to mind. Let's take a look at what the data says about this:
 
 ![image]({{ site.baseurl }}/images/poll-number-vs-references.png)
 
 In general, there is some correlation that exists, but it isn't strong (r-squared = 0.35).
 
-The top right of the graph shows candidates who poll well who are mentioned by their peers often. The data suggests that if you are mentioned a lot, you are probably polling well, but, some candidates to manage to fly under the radar. Notably Joe Biden during the fourth and fifth debate was mentioned about as much as John Delaney.
+The top right of the graph shows candidates who poll well who are mentioned by their peers often. The data suggests that if you are mentioned a lot, you are probably polling well. However, some candidates to manage to fly under the radar. Notably Joe Biden during the fourth and fifth debate was mentioned about as much as John Delaney.
 
 ## Obligatory word clouds
 Every other post about NLP seems to have one of these. To this day I'm not sure what word clouds could actually be used for, but they certainly look cool. Here are a few I found interesting.
@@ -206,12 +216,12 @@ _bill, state, experience_
 
 ![image]({{ site.baseurl }}/images/klobuchar-word-cloud.png)
 
-Heres Joe Biden's in the shape of a kangaroo.
+Here's Joe Biden's in the shape of a kangaroo.
 
 
 ![image]({{ site.baseurl }}/images/biden-word-cloud.png)
 
-These animals are having a hard time in Australia right now. If you enjoyed this post, please consider paying it forward to an organization helping with the crisis.
+These animals are having a hard time in Australia right now. If you enjoyed this post, please consider paying it forward to an organization helping with the crisis. Here are a couple to get you started:
 * **[WIRES](https://www.wires.org.au/blog/emergency-donations-to-help-wildlife)** _The Wildlife Information, Rescue and Education Service is accepting donations to fund the rescue and care of animals affected by the fires. In December, WIRES received more than 20,000 calls and volunteers attended more than 3,300 rescues._
 * **[Australian Red Cross](https://www.redcross.org.au/campaigns/disaster-relief-and-recovery-donate)** _The Australian Red Cross has assisted more than 18,600 people affected by the fires. They are accepting donations for bushfire relief efforts._
 * **[Koala Hospital Port Macquarie](https://www.koalahospital.org.au/shop/donation)** _This koala hospital in New South Wales is accepting donations to fund the rescue, treatment and release of koalas._
