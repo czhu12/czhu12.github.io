@@ -23,6 +23,19 @@ body {
   color: $darkGray;
 }
 
+table {
+  tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  td {
+    padding-right: 4em;
+  }
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: 740px;
