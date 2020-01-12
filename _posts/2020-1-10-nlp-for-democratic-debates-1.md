@@ -180,7 +180,7 @@ However, the "top" candidates (who I'm considering to be Biden, Warren, Sanders,
 
 ## [Come back, Barack](https://www.youtube.com/watch?v=ZkPSbp3zTfo)
 
-Of people who were mentioned that were not on stage, Barack Obama leads with 59, Mitch McConnell 23 and Vladimir Putin 18.
+Of people who were mentioned that were not on stage, Barack Obama leads with 27, which is more than all but 6 candidates. Mitch McConnell (13), Vladimir Putin (9), and Robert Mueller (8) round out the top 4.
 
 Interestingly, we can also paint a picture of current American foreign policy, by looking at foreign countries that were mentioned.
 
