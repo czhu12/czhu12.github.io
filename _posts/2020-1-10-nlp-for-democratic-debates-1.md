@@ -13,7 +13,7 @@ Along the way I hope to demonstrate some techniques in machine learning, natural
 
 _Note: The dataset is downloaded from [Rev](https://rev.com) which is a transcription service that provides full transcripts of the debates for free._
 
-# Speaking Time
+# Lets talk about talking
 First, let's take a look at how long each candidate spoke over the past 6 debates:
 
 Candidate            | Total Time | Utterances | Average Time
@@ -47,16 +47,16 @@ What’s more telling though, is the **relative amount of time** each candidate 
 
 ![image]({{ site.baseurl }}/images/speaking-time-all.png)
 
-This chart visually shows the difference in time given to each candidate. **The top 6 candidates spoke more than the other 16 candidates combined.**
+This chart visually shows the amount of time each candidate spoke relative to the total amount of time all candidates spoke. **The top 6 candidates spoke more than the other 16 candidates combined.**
 
 Obviously part of this comes from the fact that many of the candidates only appeared in one or two debates. Looking at the first debate, the time is much more balanced:
 
 ![image]({{ site.baseurl }}/images/speaking-time-first.png)
 
-### Better polling = more time?
+## Do networks have a bias for popular candidates?
 _Note: The polling data is downloaded from Real Clear Politics_
 
-We intuitively understand that candidates who poll higher are given more speaking time. Let’s see what the data says about this.
+We intuitively understand that candidates who poll higher are given more speaking time. But how true is this? For every candidate, I plotted their poll number against how much time they spoke for each debate.
 
 ![image]({{ site.baseurl }}/images/polling-vs-speaking-time-all.png)
 
@@ -64,7 +64,7 @@ In general, this trend holds true with an r-squared score of 0.369. There are ho
 
 _An r-squared score can tell you how correlated your data is. A score of 1 means perfect correlation, and a score of 0 means no correlation._
 
-### The Andrew Yang conspiracy
+## The Andrew Yang conspiracy
 
 There was some [internet buzz](https://www.reddit.com/r/YangForPresidentHQ/comments/e0m8e3/andrew_is_pissed_msnbc_we_are_trending_now/) that MSNBC was [biased against Andrew Yang](https://twitter.com/AndrewYang/status/1198258580996214784) during the fifth debate. Here's what that plot looks like for just the fifth debate:
 
@@ -72,7 +72,7 @@ There was some [internet buzz](https://www.reddit.com/r/YangForPresidentHQ/comme
 
 Andrew Yang polled better than Booker, Klobuchar, Gabbard, and Steyer, and yet only spoke about 6 minutes out of a 2 hour debate.
 
-### Which network followed this rule most closely?
+## Which network followed this rule most closely?
 
 The second debate, hosted by CNN had the strongest correlation (r-squared of 0.848) between polling performance and speaking time, while the sixth debate hosted by PBS had the weakest correlation (r-squared 0.004). However, a common theme in both of them? **Andrew Yang spoke the least**.
 
@@ -80,12 +80,11 @@ The second debate, hosted by CNN had the strongest correlation (r-squared of 0.8
 
 ![image]({{ site.baseurl }}/images/polling-vs-speaking-time-sixth.png)
 
-In general though, it seems if you can make it onto the stage, you’ll get at least 7 - 10 minutes of speaking time, regardless of how well you poll. Except for Andrew Yang, who, during the first debate, spoke for a measly 3 minutes. If I had to stand through a 3 hour debate to talk for just 3 minutes, I'd be pissed too.
+In general though, it seems if you can make it onto the stage, you’ll get at least 7 - 10 minutes of speaking time, regardless of how well you poll. Except for Andrew Yang, who spoke for a measly 3 minutes during the first debate. If I had to stand through a 3 hour debate to talk for just 3 minutes, I'd be pissed too.
 
 Takeaway? **Let Andrew Yang speak more!**
 
 ![image]({{ site.baseurl }}/images/andrew-yang-frustrated.jpg)
-
 
 # On the issues facing America
 
@@ -130,7 +129,7 @@ Elizabeth Warren seems to have the most balanced time allocation of all the cand
 
 I won’t bore you with 22 different breakdowns since many of them look very similar. However there are some notable exceptions.
 
-### Single Issue Candidates (Looking at you Senator Gabbard)
+### Single issue candidates (looking at you Senator Gabbard)
 
 A few candidates spend a disproportionate	amount of time (relative to other candidates) on specific issues.
 
@@ -179,7 +178,7 @@ Steve Bullock was only given 25 opportunities to speak, and in 7 of those, he me
 
 However, the "top" candidates (who I'm considering to be Biden, Warren, Sanders, and Buttigieg) were less interested in talking about Trump. They only mentioned Trump in about 5% of their statements, combining for 52 mentions out of the 961 times they spoke.
 
-## Who else is mentioned?
+## [Come back, Barack](https://www.youtube.com/watch?v=ZkPSbp3zTfo)
 
 Of people who were mentioned that were not on stage, Barack Obama leads with 59, Mitch McConnell 23 and Vladimir Putin 18.
 
@@ -189,9 +188,9 @@ Interestingly, we can also paint a picture of current American foreign policy, b
 
 China is mentioned 87 times, followed by Afghanistan (52), Russia (34), Iraq (32) and Iran (30). Undoubtedly, mentions of Iran will surge after [what](https://www.cbsnews.com/news/qassem-soleimani-iran-expert-calls-strike-that-killed-iranian-general-stunningly-stupid-and-counterproductive-2020/) [has](https://www.washingtonpost.com/national-security/2020/01/11/irans-attack-us-forces-exposes-pentagons-challenge-with-stopping-ballistic-missiles/) [happened](https://www.washingtonpost.com/world/europe/ukraine-requests-intelligence-on-crashed-airliner-as-iran-denies-missile-attack/2020/01/10/38e21ad8-332d-11ea-a053-dc6d944ba776_story.html).
 
-## Poll numbers vs mentions
+## Do more popular candidates get more heat?
 
-It is often said that as candidates become more popular in the polls, other candidates will "attack" or reference them more often in debates. [Pete Buttigieg's latest debate](https://www.youtube.com/watch?v=CMgQu1GjSmk) comes to mind. Let's take a look at what the data says about this:
+It is often said that as candidates become more popular in the polls, other candidates will "attack" or reference them more often in debates. [Pete Buttigieg's latest debate](https://www.youtube.com/watch?v=CMgQu1GjSmk) comes to mind. What happens if we plot each candidates poll numbers against how many time they were mentioned in each debate? (Doesn't include moderator mentions).
 
 ![image]({{ site.baseurl }}/images/poll-number-vs-references.png)
 
@@ -201,7 +200,7 @@ The top right of the graph shows candidates who poll well who are mentioned by t
 
 # Obligatory word clouds
 
-Every other post about NLP seems to have one of these. To this day I'm not sure what word clouds could actually be used for, but they certainly look cool. Here are a few I found interesting.
+Every other post about NLP seems to have one of these sections. To this day I'm not sure what word clouds could actually be used for, but they certainly look cool. Here are a few I found interesting.
 
 #### Bernie Sanders
 
