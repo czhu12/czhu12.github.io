@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Machine Learning Engineer at Airbnb. Working on building intelligent chatbots.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'll try to write about machine learning, deep learning, natural language processing. Also an avid rails developer.
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Message me on [Twitter](https://twitter.com/chriszhu12)
