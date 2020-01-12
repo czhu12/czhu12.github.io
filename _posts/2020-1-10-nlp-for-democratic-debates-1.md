@@ -169,8 +169,9 @@ While Joe Biden has a **high number of interruptions**, other candidates have a 
 ![image]({{ site.baseurl }}/images/interruption-percentage.png)
 
 # The elephant in the room
+![image]({{ site.baseurl }}/images/trump-smug.jpg)
 
-Throughout the election democrats have continuously stressed the importance of focusing on real issues rather than being ["anti-Trump"](https://www.nbcnews.com/politics/politics-news/schumer-warns-democrats-can-t-just-be-anti-trump-n847186). Did the current crop of democrats follow their own advice? Tdlr; kinda?
+Throughout the election democrats have continuously stressed the importance of focusing on real issues rather than just being ["anti-Trump"](https://www.nbcnews.com/politics/politics-news/schumer-warns-democrats-can-t-just-be-anti-trump-n847186). Did the current crop of democrats follow their own advice? Tdlr; kinda?
 
 ![image]({{ site.baseurl }}/images/utterances-trump.png)
 
@@ -221,7 +222,6 @@ _problem, student loan, families, law_
 
 ![image]({{ site.baseurl }}/images/warren-word-cloud.png)
 
-
 #### Amy Klobuchar
 
 _bill, state, experience_
@@ -229,7 +229,6 @@ _bill, state, experience_
 ![image]({{ site.baseurl }}/images/klobuchar-word-cloud.png)
 
 Here's Joe Biden's in the shape of a kangaroo.
-
 
 ![image]({{ site.baseurl }}/images/biden-word-cloud.png)
 
