@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Can Natural Language Processing help us make sense of the debates?
+title: What Can Data Science Tell Us About the Democratic Debates?
 ---
-
-In the past year there has been **6** democratic debates with a total of **22** candidates who have spoken **181864** words for a total of **14 hours, 47 minutes and 24 seconds.**
+![image]({{ site.baseurl }}/images/democratic-debates.jpg) In the past year there has been **6** democratic debates with a total of **22** candidates who have spoken **181864** words for a total of **14 hours, 47 minutes and 24 seconds.**
 
 With so much content, I find it's often difficult to make sense of what's happened.
 
@@ -170,11 +169,22 @@ While Joe Biden has a **high number of interruptions**, other candidates have a 
 # The elephant in the room
 ![image]({{ site.baseurl }}/images/trump-smug.jpg)
 
-Throughout the election democrats have continuously stressed the importance of focusing on real issues rather than just being ["anti-Trump"](https://www.nbcnews.com/politics/politics-news/schumer-warns-democrats-can-t-just-be-anti-trump-n847186). Did the current crop of democrats follow their own advice? Tdlr; kinda?
+Throughout the election democrats have continuously stressed the importance of focusing on real issues rather than just being ["anti-Trump"](https://www.nbcnews.com/politics/politics-news/schumer-warns-democrats-can-t-just-be-anti-trump-n847186). Did the current crop of democrats follow their own advice?
+
+### Sidebar: Named Entity Recognition
+To do this kind of analysis we can leverage a machine learning task called named entity recognition, which can recognize and categorize important words. Heres an example:
+
+![image]({{ site.baseurl }}/images/named-entity-recognition.png)
+
+We can use this technology to extract all mentions of a PERSON.
+
+### Alright, back to Trump
+
+What do we get if we apply this to the debate transcripts?
 
 ![image]({{ site.baseurl }}/images/utterances-trump.png)
 
-Steve Bullock was only given 25 opportunities to speak, and in 7 of those, he mentioned Trump. Curiously at the top is Andrew Yang, who has stressed the importance of not obsessing over Trump so often that he mentions him at a higher rate than basically every other Democrat. He mentions Trump in 14 out of 92 utterances (he actually References Trump directly 28 times). Kamala Harris, Cory Booker and Amy Klobuchar are tied for first, mentioning Trump in 17 of their utterances. In total, Donald Trump was referenced 330 times across all the candidates.
+Steve Bullock was only given 25 opportunities to speak, and in 7 of those, he mentioned Trump. Curiously at the top is Andrew Yang, who has stressed the importance of not obsessing over Trump so often that he mentions him at a higher rate than basically every other Democrat. He mentions Trump in 14 out of 92 statements (he says Trump's name 28 times in those 14 statements).
 
 However, the "top" candidates (who I'm considering to be Biden, Warren, Sanders, and Buttigieg) were less interested in talking about Trump. They only mentioned Trump in about 5% of their statements, combining for 52 mentions out of the 961 times they spoke.
 
