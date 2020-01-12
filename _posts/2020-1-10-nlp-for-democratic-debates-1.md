@@ -177,7 +177,7 @@ Throughout the election democrats have continuously stressed the importance of f
 
 Steve Bullock was only given 25 opportunities to speak, and in 7 of those, he mentioned Trump. Curiously at the top is Andrew Yang, who has stressed the importance of not obsessing over Trump so often that he mentions him at a higher rate than basically every other Democrat. He mentions Trump in 14 out of 92 utterances (he actually References Trump directly 28 times). Kamala Harris, Cory Booker and Amy Klobuchar are tied for first, mentioning Trump in 17 of their utterances. In total, Donald Trump was referenced 330 times across all the candidates.
 
-However, the "top" candidates (who I'm considering to be Biden, Warren, Sanders, Buttigieg) were less interested in talking about Trump. They only mentioned Trump in about 5% of their statements, combining for 52 mentions out of the 961 times they spoke.
+However, the "top" candidates (who I'm considering to be Biden, Warren, Sanders, and Buttigieg) were less interested in talking about Trump. They only mentioned Trump in about 5% of their statements, combining for 52 mentions out of the 961 times they spoke.
 
 ## Who else is mentioned?
 
@@ -197,7 +197,7 @@ It is often said that as candidates become more popular in the polls, other cand
 
 In general, there is some correlation that exists, but it isn't strong (r-squared = 0.35).
 
-The top right of the graph shows candidates who poll well who are mentioned by their peers often. The data suggests that if you are mentioned a lot, you are probably polling well. However, some candidates to manage to fly under the radar. Notably Joe Biden during the fourth and fifth debate was mentioned about as much as John Delaney. Biden polls around 30% while Delaney polls at around 0%.
+The top right of the graph shows candidates who poll well who are mentioned by their peers often. The data suggests that if you are mentioned a lot, you are probably polling well. However, some candidates to manage to fly under the radar. Joe Biden and John Delaney were mentioned about the same amount during the fourth and fifth debates. Biden polls around 30% while Delaney polls at around 0%.
 
 # Obligatory word clouds
 
