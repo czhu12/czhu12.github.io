@@ -17,7 +17,7 @@ _Note: The dataset is downloaded from [Rev](https://rev.com) which is a transcri
 First, let's take a look at how long each candidate spoke over the past 6 debates:
 
 Candidate            | Total Time | Utterances | Average Time
--------------------- | ---------
+-------------------- | ---------  | ---------- | -----------
 Elizabeth Warren	|	1:40:27	|	255	|	0:23
 Joe Biden	|	1:33:09	|	278	|	0:20
 Bernie Sanders	|	1:27:57	|	219	|	0:24
@@ -53,7 +53,7 @@ Obviously part of this comes from the fact that many of the candidates only appe
 
 ![image]({{ site.baseurl }}/images/speaking-time-first.png)
 
-### Better Polling = More Time?
+### Better polling = more time?
 _Note: The polling data is downloaded from Real Clear Politics_
 
 We intuitively understand that candidates who poll higher are given more speaking time. Let’s see what the data says about this.
@@ -62,22 +62,25 @@ We intuitively understand that candidates who poll higher are given more speakin
 
 In general, this trend holds true with an r-squared score of 0.369. There are however, some notable standouts. The top left corner are candidates who don’t poll well, yet had a lot of speaking time. Senator Klobuchar polled at around 2% during Sixth debate, yet spoke almost twice as much as Joe Biden, who was polling at 32%.
 
-In general though, it seems if you can make it onto the stage, you’ll get at least 7 - 10 minutes of speaking time, regardless of how well you poll. Except for Andrew Yang, who, during the first debate, spoke for a measly 3 minutes.
+_An r-squared score can tell you how correlated your data is. A score of 1 means perfect correlation, and a score of 0 means no correlation._
 
-### Andrew Yang vs MSNBC
+### The Andrew Yang conspiracy
 
-There was some internet buzz that MSNBC was biased against Andrew Yang during the fifth debate. Here's what that plot looks like for just the fifth debate:
+There was some [internet buzz](https://www.reddit.com/r/YangForPresidentHQ/comments/e0m8e3/andrew_is_pissed_msnbc_we_are_trending_now/) that MSNBC was [biased against Andrew Yang](https://twitter.com/AndrewYang/status/1198258580996214784) during the fifth debate. Here's what that plot looks like for just the fifth debate:
 
 ![image]({{ site.baseurl }}/images/polling-vs-speaking-time-fifth.png)
 
 Andrew Yang polled better than Booker, Klobuchar, Gabbard, and Steyer, and yet only spoke about 6 minutes out of a 2 hour debate.
 
 ### Which network followed this rule most closely?
-The second debate, hosted by CNN had the strongest correlation (r-squared of 0.848) between polling performance and speaking time, while the sixth debate hosted by PBS had the weakest correlation (r-squared 0.004). However, a common theme in both of them? Andrew Yang spoke the least.
+
+The second debate, hosted by CNN had the strongest correlation (r-squared of 0.848) between polling performance and speaking time, while the sixth debate hosted by PBS had the weakest correlation (r-squared 0.004). However, a common theme in both of them? **Andrew Yang spoke the least**.
 
 ![image]({{ site.baseurl }}/images/polling-vs-speaking-time-second.png)
 
 ![image]({{ site.baseurl }}/images/polling-vs-speaking-time-sixth.png)
+
+In general though, it seems if you can make it onto the stage, you’ll get at least 7 - 10 minutes of speaking time, regardless of how well you poll. Except for Andrew Yang, who, during the first debate, spoke for a measly 3 minutes. If I had to stand through a 3 hour debate to talk for just 3 minutes, I'd be pissed too.
 
 Takeaway? **Let Andrew Yang speak more!**
 
@@ -85,6 +88,7 @@ Takeaway? **Let Andrew Yang speak more!**
 
 
 # On the issues facing America
+
 I trained a text classification model to predict whether a blurb of text is about one of:
 * HEALTHCARE
 * FOREIGN_POLICY
@@ -98,7 +102,7 @@ I trained a text classification model to predict whether a blurb of text is abou
 * REPUBLICANS
 * OTHER
 
-_The details of how this was done will be discussed in another post, but a big thanks to the [Snorkel](https://hazyresearch.github.io/snorkel/) team for building the tools to make this possible._
+_Big thanks to the [Snorkel](https://hazyresearch.github.io/snorkel/) team for building the tools to make this possible._
 
 For instance, given a sentence like:
 
@@ -115,6 +119,7 @@ Here is how the democratic candidates allocated their speaking time in aggregate
 With most of the time being allocated to foreign policy, the economy, and healthcare.
 
 Most of this data confirms trends most people already understand. Bernie Sanders spends more time talking about healthcare than Joe Biden.
+
 ![image]({{ site.baseurl }}/images/biden-time-spent.png)
 
 ![image]({{ site.baseurl }}/images/sanders-time-spent.png)
@@ -133,19 +138,23 @@ Andrew Yang’s platform is based on establishing a universal basic income, whic
 
 ![image]({{ site.baseurl }}/images/yang-single-issue.png)
 
-Tom Steyer is a businessman who became a climate activist.
+Tom Steyer is a businessman who became a climate activist, so he tends to speak more about the economy and the environment.
 
 ![image]({{ site.baseurl }}/images/steyer-single-issue.png)
 
-But everyone pales in comparison to Tulsi Gabbard, who spent more than half of her speaking time talking about foreign policy. Her background as a veteran who served in Iraq and Kuwait explains her credibility and expertise on the issue.
+But everyone pales in comparison to Tulsi Gabbard, who spent almost two thirds of her time talking about foreign policy. Understandable, given her background as a veteran who served in Iraq and Kuwait, and a fierce opposition of American interventionism.
 
 ![image]({{ site.baseurl }}/images/gabbard-single-issue.png)
 
-## Dammit Joe, can you just let me finish?
+# Dammit Joe, can you just let me finish?
 
-I remember my elementary school had a debate club that I joined. Actually my parents made me join because they thought it would help with public speaking (it didn't). But, I vaguely remember one debater interrupting another was frowned upon. (We also were given more than 23 seconds to make a case).
+When I was in elementary, I joined our schools debate club. Actually my parents made me join because they thought it would help with public speaking (it didn't). The topics were less consequential, like whether zoos should exist or whether chores had a positive influence. (We also were given more than 23 seconds to make a case). I don't remember much because, like other kids in that club, I never attended. But, I vaguely remember a rule against one debater interrupting another.
 
-It certainly seems on the big stage, there are many instances of one candidate interrupting another. Are some candidates more eager to interrupt than others? I took a ranked the worst offenders by looking at candidates with the highest number of **speaking without being asked a question by a moderator**.
+It certainly seems on the big stage, there are many instances of one candidate interrupting another. How often does this happen and are some candidates more eager to interrupt than others? I defined an "interruption" as a **candidate speaking without being asked a question by a moderator**.
+
+Of the 14 hours and 47 minutes the candidates spoke, **55 minutes, 31 seconds of that was one candidate interrupting another**.
+
+Here are the worst offenders:
 
 ![image]({{ site.baseurl }}/images/interruption-number.png)
 
@@ -155,23 +164,25 @@ Joe Biden has interrupted his peers 54 times over the past 6 debates, out of the
 
 In his defense, I took a look at what he said during these interruptions, and many were responding to criticisms by other candidates.
 
-While Joe Biden has a **high number of interruptions**, other candidates have a **high percentage of time spent interrupting**. Of the 15 minutes and 6 seconds John Delaney was given to speak, 1 minute 57 seconds of that time was via an interruption, which is about 13%.
+While Joe Biden has a **high number of interruptions**, other candidates have a **high percentage of time spent interrupting**. John Delaney only spoke for 15 minutes and 6 seconds in total, but, 1 minute 57 seconds of that time was via an interruption, which is about 13%.
 
 ![image]({{ site.baseurl }}/images/interruption-percentage.png)
 
-## The elephant in the room
+# The elephant in the room
 
-Throughout the election democrats have continuously stressed the importance of focusing on issues rather than on President Trump. Did the current crop of democrats follow their own advice?
+Throughout the election democrats have continuously stressed the importance of focusing on real issues rather than being ["anti-Trump"](https://www.nbcnews.com/politics/politics-news/schumer-warns-democrats-can-t-just-be-anti-trump-n847186). Did the current crop of democrats follow their own advice? Tdlr; kinda?
 
 ![image]({{ site.baseurl }}/images/utterances-trump.png)
 
 Steve Bullock was only given 25 opportunities to speak, and in 7 of those, he mentioned Trump. Curiously at the top is Andrew Yang, who has stressed the importance of not obsessing over Trump so often that he mentions him at a higher rate than basically every other Democrat. He mentions Trump in 14 out of 92 utterances (he actually References Trump directly 28 times). Kamala Harris, Cory Booker and Amy Klobuchar are tied for first, mentioning Trump in 17 of their utterances. In total, Donald Trump was referenced 330 times across all the candidates.
 
+However, the "top" candidates (who I'm considering to be Biden, Warren, Sanders, Buttigieg) were less interested in talking about Trump. They only mentioned Trump in about 5% of their statements, combining for 52 mentions out of the 961 times they spoke.
+
 ## Who else is mentioned?
 
 Of people who were mentioned that were not on stage, Barack Obama leads with 59, Mitch McConnell 23 and Vladimir Putin 18.
 
-We can also take a look at foreign countries that are mentioned to paint a picture of American foreign policy today.
+Interestingly, we can also paint a picture of current American foreign policy, by looking at foreign countries that were mentioned.
 
 ![image]({{ site.baseurl }}/images/mentioned-countries.png)
 
@@ -185,9 +196,10 @@ It is often said that as candidates become more popular in the polls, other cand
 
 In general, there is some correlation that exists, but it isn't strong (r-squared = 0.35).
 
-The top right of the graph shows candidates who poll well who are mentioned by their peers often. The data suggests that if you are mentioned a lot, you are probably polling well. However, some candidates to manage to fly under the radar. Notably Joe Biden during the fourth and fifth debate was mentioned about as much as John Delaney.
+The top right of the graph shows candidates who poll well who are mentioned by their peers often. The data suggests that if you are mentioned a lot, you are probably polling well. However, some candidates to manage to fly under the radar. Notably Joe Biden during the fourth and fifth debate was mentioned about as much as John Delaney. Biden polls around 30% while Delaney polls at around 0%.
 
-## Obligatory word clouds
+# Obligatory word clouds
+
 Every other post about NLP seems to have one of these. To this day I'm not sure what word clouds could actually be used for, but they certainly look cool. Here are a few I found interesting.
 
 #### Bernie Sanders
