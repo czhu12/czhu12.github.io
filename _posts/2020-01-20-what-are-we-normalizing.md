@@ -59,13 +59,25 @@ Dr. Peterson is essentially arguing that occupation confounds the gender vs wage
 
 We can apply the same remedy: normalize against occupation, which case, the correlation is shown to be weaker. Indeed, this is the cause many [publications](https://www.heritage.org/jobs-and-labor/commentary/pay-gap-myth-ignores-womens-intentional-job-choices) [point](https://www.theatlantic.com/business/archive/2016/07/paygap-discrimination/492965/) to, to explain the wage gap.
 
+### Damn these confounding confounders
+
+Going back to the Nobel prize vs chocolate question: When we normalized for wealth as a confounder, we implicitly assumed a causal model of the world.
+
+<img src="{{ site.baseurl }}/images/normalization/dag-wealth-nobel-prizes.png" alt="drawing" width="500"/>
+
+But how can we be sure that "wealth" is the true cause of more Nobel prizes? Is there another confounder of this correlation? I can find one:
+
+<img src="{{ site.baseurl }}/images/normalization/wealth-nobel-prizes-confounder.png" alt="drawing" width="500"/>
+
+Since **genetics isn't observable, we can't normalize for it**. This causal model becomes impossible to prove or disprove. This is taking us down a weird path...
+
 ### What are we normalizing for?
 
 I hope I've convinced you that while data is objective, the interpretation (and therefore, utility) of data is highly subjective. Statisticians try to get around this by **normalizing for every potential confounder**, as a means of uncovering the true relationship between gender and wage. Age, personality, occupation, college education, marital status, etc. But, this causes other serious problems, that people often dismiss.
 
 Let's pull up the occupation confounder diagram again.
 
-![image]({{ site.baseurl }}/images/normalization/no-discrimination.png)
+![image]({{ site.baseurl }}/images/normalization/no-discrimination-1.png)
 
 In this model, it makes sense to normalize against occupation, since it's a confounder. The story this model tells is that women tend to choose different (lower paying) occupations than men do, and therefore, this explains some of the wage difference.
 
@@ -75,11 +87,11 @@ However, here is an alternative model of the data generation process:
 
 This model tells a completely different story. In this model, women choose different occupations due to discriminatory pressures.
 
-In this case, **normalizing occupation removes the very mechanism through which women are underpaid due to discrimination**. To put it another way, if we only look at women in high paying occupations, they would make the same as men. But women are denied access to these higher paying jobs due to discrimination. Normalizing for occupation hides this.
+In this case, **normalizing occupation removes the very mechanism through which women are underpaid due to discrimination**. To put it another way, if we only look at women in high paying occupations, they would make the same as men. But women are denied access to these higher paying jobs due to discrimination. Normalizing for occupation hides the thing we were looking for in the first place.
 
-The issue is that model 1 and model 2 can produce the exact same data, due to the fact that the "discrimination" variable is not measurable, therefore, it is often difficult to "prove" which model is the true data generation process.
+The fundamental issue is that model 1 and model 2 can produce the exact same data, due to the fact that the "discrimination" variable is not measurable. Therefore, we don't have the statistical tools to "prove" which model is the true data generation process.
 
-### Where to go from here
+### Where to go from here?
 
 I don't have an answer, but I think instead of assuming that the most valid statistical study is the one that normalizes for the most factors, we could be more thoughtful about the underlying causal process that creates the data. For this wage gap question to be adequately answered, sociologists need to reach a consensus on this causal model.
 
