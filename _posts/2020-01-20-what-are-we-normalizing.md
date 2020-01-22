@@ -47,19 +47,17 @@ In this case, occupation is a **confounder** of the question we are trying to an
 
 Despite this information, I doubt you'd be willing to believe that milk consumption causes Nobel prizes, because "correlation does not imply causation"
 
-Astoundingly, [some people](https://healthland.time.com/2012/10/12/can-eating-chocolate-help-you-win-a-nobel-prize/) still overlook this rule.
+Astoundingly, [some people](https://healthland.time.com/2012/10/12/can-eating-chocolate-help-you-win-a-nobel-prize/) still seem to forget this rule. Olivia B. Waxman from Time suggests that "For the U.S. (to win one additional Nobel prize), we should consume an extra 125 million kg (275.6 million lbs.) of chocolate a year."
 
-> For the U.S. (to win one additional Nobel prize), we should consume an extra 125 million kg (275.6 million lbs.) of chocolate a year.
-
-Indeed, this correlation is likely due to a confounder: wealth. We can see this if we plot wealth vs Nobel prizes. (Countries that have more to spend on chocolate probably also have more to spend on education).
+Indeed, this correlation is likely due to a confounder: wealth. We can see this if we plot wealth vs Nobel prizes.
 
 ![image]({{ site.baseurl }}/images/normalization/wealth-vs-nobel-prizes.jpg)
 
-If we normalize against wealth, we would see that the correlation between Nobel prizes and chocolate is weaker.
+If we normalize against wealth, we would see that the correlation between Nobel prizes and chocolate becomes much weaker. (Countries that have more to spend on chocolate probably also have more to spend on education).
 
-Dr. Peterson is essentially arguing that occupation has an effect on the gender vs wage correlation the same way wealth affects the Nobel prize vs chocolate correlation.
+Dr. Peterson is essentially arguing that occupation confounds the gender vs wage correlation the same way wealth confounds the Nobel prize vs chocolate correlation.
 
-We can apply the same remedy: normalize against occupation, which case, the correlation is shown to be weaker. Indeed, this is the cause many [publications](https://www.heritage.org/jobs-and-labor/commentary/pay-gap-myth-ignores-womens-intentional-job-choices) [point](https://www.theatlantic.com/business/archive/2016/07/paygap-discrimination/492965/) to to explain the wage gap.
+We can apply the same remedy: normalize against occupation, which case, the correlation is shown to be weaker. Indeed, this is the cause many [publications](https://www.heritage.org/jobs-and-labor/commentary/pay-gap-myth-ignores-womens-intentional-job-choices) [point](https://www.theatlantic.com/business/archive/2016/07/paygap-discrimination/492965/) to, to explain the wage gap.
 
 ### What are we normalizing for?
 
