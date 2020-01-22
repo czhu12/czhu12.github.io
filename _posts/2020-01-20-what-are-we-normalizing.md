@@ -17,9 +17,9 @@ Here's an alternative view of this question:
 
 ![image]({{ site.baseurl }}/images/normalization/wage-gap-question.png)
 
-This diagram specifies a plausible mechanism for producing data that shows a wage gap. To put it another way, this is a model of the data generation process. It specifies causal effects different factors have on each other (gender causes discrimination which causes a wage gap).
+This diagram specifies a plausible mechanism for producing data that shows a wage gap. To put it another way, this is a model of the *data generation process*. It specifies causal effects different factors have on each other (gender causes discrimination which causes a wage gap).
 
-Because "discrimination" isn't really measurable in the traditional sense, it's unobservable, which is why I colored it lighter. Instead, sociologists measure the correlation between the two observable variables in this diagram, gender and wage, which show that women on aggregate make 82% of men.
+Because "discrimination" isn't really measurable in the traditional sense, it's unobservable, which is why I colored it lighter. Instead, to answer this question, sociologists measure the correlation between the two observable variables in this diagram, gender and wage. Doing this shows show that women on aggregate make 82% of men.
 
 ### Wait... Correlation is not Causation?
 
