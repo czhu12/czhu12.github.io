@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What are we normalizing for?
+title: The Questions that Statistics Can't Answer
 ---
 
 Statistics is the science of answering questions through data. Statisticians try to be as objective as possible, by drawing conclusions solely from data, but in doing so, they often obscure the very question they are trying to answer.
