@@ -3,11 +3,11 @@ layout: post
 title: What are we normalizing for?
 ---
 
-Statistics is the science of answering questions through the data.
+Statistics is the science of answering questions through the data. Statisticians try to be as objective as possible, by drawing conclusions solely from data, but in doing so, they often obscure the very question they are trying to answer.
 
 The gender pay gap debate falls victim to this. Part of the reason why this debate is still on-going, despite the abundance of data that exists, is that **statisticians can't seem to agree on how to interpret the data**.
 
-Before going further, I'd like to say that I'm not taking a position on the gender wage gap. I just want to highlight the deficiencies in these debates and to offer a framework for thinking about statistical claims in general. Namely, **these debates make no sense without first agreeing on an underlying model of how the data is generated**.
+Before going further, I'd like to say that I'm not taking a position on the gender wage gap. I just want to highlight the deficiencies in these debates and to offer a framework for thinking about statistical claims in general. Namely, that **these debates make no sense without first agreeing on an underlying model of how the data is generated**.
 
 The question most sociologists are debating is this:
 
