@@ -3,6 +3,7 @@ layout: post
 title: The Questions that Statistics Can't Answer
 ---
 
+![image]({{ site.baseurl }}/images/normalization/no-discrimination-2.png) In the past year there has been **6** democratic debates with a total of **22** candidates who have spoken **181864** words for a total of **14 hours, 47 minutes and 24 seconds.**
 Statistics is the science of answering questions through data. Statisticians try to be as objective as possible, by drawing conclusions solely from data, but in doing so, they often obscure the very question they are trying to answer.
 
 The gender pay gap debate falls victim to this. Part of the reason why this debate is still on-going, despite the abundance of data that exists, is that **statisticians can't seem to agree on how to interpret the data**.
